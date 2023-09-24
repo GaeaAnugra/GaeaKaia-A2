@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--In order to give credit to the original owners, I made the the top row dedicated towards the necessary links to properly cite the original authors --> 
+
+<body>
+  <h2> Credits </h2>
+</body>
+
+<html lang="en">
+
+<!-- In pursuit of not only aesthetic harmony but also a conscientious adherence to the principles established in prior assignments, I've opted to employ the Quicksand font from Google Fonts as my preferred typographical choice. This decision not only contributes to the visual cohesiveness of the design but also aligns with the prevailing website conventions by classifying Quicksand within the broader serif font family. By doing so, I aim to maintain a consistent and visually appealing user experience while adhering to established design principles.-->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaea A2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+    
+    <p class="attribution">
+      "<a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/719005078">Art Time, Handheld Windmill / Fan</a>" by 
+      <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/berrybunchfamily">theBerry Bunch</a> is licensed under 
+      <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+      </a>. 
+    </p>  
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+        <!-- full screen button-->
+        <button class="video-control-button" id="fullscreenButton"></button>
+        
+      </div>
+      <!-- I've incorporated some decorative elements to enhance the visual appeal in the spacious area below the video. The choice of colors in these additions aligns seamlessly with the overall visual aesthetic, ensuring a cohesive and harmonious design.-->
+      <img src="deco.png">
+
+    </div>
+
+  </body>
+
+</html>
